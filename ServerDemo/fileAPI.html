@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Metronic | Layouts - Horzontal Menu 2</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <meta content="" name="description" />
+
+    <meta content="" name="author" />
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+    <link href="media/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="media/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="media/css/style-metro.css" rel="stylesheet" type="text/css" />
+
+    <link href="media/css/style.css" rel="stylesheet" type="text/css" />
+
+    <link href="media/css/style-responsive.css" rel="stylesheet" type="text/css" />
+
+    <link href="media/css/default.css" rel="stylesheet" type="text/css" id="style_color" />
+
+    <link href="media/css/uniform.default.css" rel="stylesheet" type="text/css" />
+
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <link rel="shortcut icon" href="media/image/favicon.ico" />
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed page-full-width">
+
+    <!-- BEGIN HEADER -->
+
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+
+        <!-- BEGIN TOP NAVIGATION BAR -->
+
+        <div class="navbar-inner">
+
+            <div class="container-fluid">
+
+                <!-- BEGIN LOGO -->
+
+                <a class="brand" href="index.html">
+
+                    <img src="media/image/logo.png" alt="logo" />
+
+                </a>
+
+                <!-- END LOGO -->
+
+                <!-- BEGIN HORIZANTAL MENU -->
+
+                <div class="navbar hor-menu hidden-phone hidden-tablet">
+
+                    <div class="navbar-inner">
+
+                        <ul class="nav">
+
+                            <li class="visible-phone visible-tablet">
+
+                                <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+
+                                <form class="sidebar-search">
+
+                                    <div class="input-box">
+
+                                        <a href="javascript:;" class="remove"></a>
+
+                                        <input type="text" placeholder="Search..." />
+
+                                        <input type="button" class="submit" value=" " />
+
+                                    </div>
+
+                                </form>
+
+                                <!-- END RESPONSIVE QUICK SEARCH FORM -->
+
+                            </li>
+
+                            <li>
+
+                                <a href="index.html">首页
+
+                                </a>
+
+                            </li>
+
+                            <li class="active">
+
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
+
+                                    <span class="selected"></span>
+
+                                    公共API
+
+                                </a>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="hor-menu-search-form-toggler">&nbsp;</span>
+
+                                <div class="search-form hidden-phone hidden-tablet">
+
+                                    <form class="form-search">
+
+                                        <div class="input-append">
+
+                                            <input type="text" placeholder="查找..." class="m-wrap">
+
+                                            <button type="button" class="btn"></button>
+
+                                        </div>
+
+                                    </form>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- END HORIZANTAL MENU -->
+
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+                <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+                    <img src="media/image/menu-toggler.png" alt="" />
+
+                </a>
+
+                <!-- END RESPONSIVE MENU TOGGLER -->
+
+
+            </div>
+
+        </div>
+
+        <!-- END TOP NAVIGATION BAR -->
+
+    </div>
+
+    <!-- END HEADER -->
+
+    <!-- BEGIN CONTAINER -->
+
+    <div class="page-container row-fluid">
+
+        <!-- BEGIN EMPTY PAGE SIDEBAR -->
+
+
+        <!-- BEGIN PAGE -->
+
+        <div class="page-content">
+
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+            <div id="portlet-config" class="modal hide">
+
+                <div class="modal-header">
+
+                    <button data-dismiss="modal" class="close" type="button"></button>
+
+                    <h3>portlet Settings</h3>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Here will be a configuration form</p>
+
+                </div>
+
+            </div>
+
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+            <!-- BEGIN PAGE CONTAINER-->
+
+
+            <div class="row">
+
+                <div class="span3 sidebar-content ">
+
+                    <ul class="ver-inline-menu tabbable margin-bottom-25">
+
+                        <li class="active">
+
+                            <a href="#commonApiDesc" data-toggle="tab">
+
+                                <i class="icon-briefcase"></i>
+
+                                公共API概述
+
+                            </a>
+
+                        </li>
+
+                        <li><a href="#ApiList" data-toggle="tab"><i class="icon-group"></i>API 列表</a></li>
+
+                        <li><a href="#ApiStatusCode" data-toggle="tab"><i class="icon-leaf"></i>API 状态码</a></li>
+
+                        <!--                            <li><a href="#tab_1" data-toggle="tab"><i class="icon-info-sign"></i>License Terms</a></li>
+
+                            <li><a href="#tab_2" data-toggle="tab"><i class="icon-tint"></i>Payment Rules</a></li>
+
+                            <li><a href="#tab_3" data-toggle="tab"><i class="icon-plus"></i>Other Questions</a></li>
+
+                            <li><a href="#tab_3" data-toggle="tab"><i class="icon-tasks"></i>Taks & Resources</a></li>
+
+                            <li><a href="#tab_3" data-toggle="tab"><i class="icon-user"></i>User Management</a></li>-->
+
+                    </ul>
+
+
+
+                </div>
+
+                <div class="span9 ">
+                    <!-- 公共API描述-->
+                    <section id="commonApiDesc">
+                        <div class="page-header">
+                            <h1>公共API概述</h1>
+                        </div>
+                        <p>资源平台为客户端开发者提供了访问服务端资源的系列接口(REST)，通过对这些API的组合调用，可以实现基本的用户文件操作和管理清单功能。</p>
+                        <p>所有REST API都必须经过开通权限才能正常使用,每次访问都需要传入<strong class="text-center">AccessToken</strong></p>
+                        <h3>API请求方式说明</h3>
+                        <ul>
+                            <li>目前所有的提交类接口仅支持POST方式，查询类接口同时支持POST方式和GET方式。</li>
+                            <li>所有参数在传入时应当使用：<font color="red"><b>UTF-8编码</b></font>。</li>
+                            <li>目前所有的提交类接口仅支持POST方式，查询类接口同时支持POST方式和GET方式。</li>
+                            <li><b>HTTP 请求方式</b></li>
+                        </ul>
+                        <div style="margin-left: 30px;">
+                            <p>
+                                GET | POST 
+                            </p>
+                        </div>
+                        <ul>
+                            <li><b>URL</b>
+                            </li>
+                        </ul>
+                        <div class="bordered">
+                            <div>
+                                <pre> https://server/api/{object_name}?{query_string}
+</pre>
+                            </div>
+                            <ul>
+                                <li><b>参数说明</b>
+                                </li>
+                            </ul>
+                            <table class="table table-bordered">
+
+                                <tr>
+                                    <th scope="col"><b>参数名称</b>
+                                    </th>
+                                    <th scope="col"><b>描述</b>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>object_name
+                                    </td>
+                                    <td>REST API操作实体名称，如：file、manifest、message。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>query_string
+                                    </td>
+                                    <td>放在HTTP头部传入的参数，必须经过UrlEncode编码。
+                                    </td>
+                                </tr>
+                            </table>
+                            <ul>
+                                <li>HTTP GET和POST方式使用说明
+                                </li>
+                            </ul>
+                            <table class="table table-bordered table-hover">
+
+                                <tr>
+                                    <th>请求方式
+                                    </th>
+                                    <th>GET
+                                    </th>
+                                    <th>POST
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>URL
+                                    </th>
+                                    <td colspan="2"><a href="http://server/api/{object_name}?{query_string}" class="external" rel="nofollow" target="_blank">http://server/api/{object_name}?{query_string}</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">请求参数
+                                    </th>
+                                    <td>全部携带在 HTTPS 请求头部的 query_string 中。
+                                    </td>
+                                    <td>既可携带在 query_string 中，也可携带在 HTTP Body 中。
+                                            <dl>
+                                                <dd>
+                                                    <ul>
+                                                        <li>method 及 access token 等参数必须携带在 query_string 中进行传输，请参考各个API的具体说明；
+                                                        </li>
+                                                        <li>携带在 query_string 中的参数的值，必须进行 UrlEncode 编码；
+                                                        </li>
+                                                        <li>携带在 HTTP Body 中的参数，则不需要进行 UrlEncode 编码。
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        <div class="note" style="border: solid 1px #d7d7d7; padding: 10px 16px 2px 16px; background-color: #fbfafb;">
+                                            <div>注</div>
+                                            HTTP URL 长度有限，若参数值长度过长，建议将参数放在 HTTP Body 中进行传输。
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">HTTP BODY
+                                    </th>
+                                    <td>不携带HTTP Body
+                                    </td>
+                                    <td>multipart/form-data
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">注意
+                                    </th>
+                                    <td colspan="2">如果 HTTP Body 和 query_string 存在相同的参数，则以 query_string 中的参数为准。
+                                    </td>
+                                </tr>
+                            </table>
+                            <ul>
+                                <li><b>使用示例</b>
+                                </li>
+                            </ul>
+                            <p>
+                                1． GET请求：<br />
+                            </p>
+                            <dl>
+                                <dd>说明：<br />
+                                    <dl>
+                                        <dd>用HTTP GET请求方式发送两个参数：key1=value1和key2=value2。<br />
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                            <div>
+                                <pre>http://server/api/file?key1=UrlEncode(value1)&amp;key2=UrlEncode(value2)
+</pre>
+                                <p>
+                                    2． POST请求：<br />
+                                </p>
+                                <dl>
+                                    <dd>说明：<br />
+                                        <dl>
+                                            <dd>分别用两种方式使用POST方式发送三个参数：key1=value1、key2=value2和key3=value3；方式一与方式二效果等同。
+                                            </dd>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                                <br />
+                                方式一：<br />
+                                <pre>POST /server/api/file?key2=value2&amp;key3=value3 HTTP/1.1
+
+User-Agent: curl/7.12.1 (x86_64-redhat-linux-gnu) libcurl/7.12.1 OpenSSL/0.9.7a zlib/1.2.1.2 libidn/0.5.6
+Pragma: no-cache
+Accept: */*
+Host:www.dayang.com
+Content-Length:123
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryS0JIa4uHF7yHd8xJ
+------WebKitFormBoundaryS0JIa4uHF7yHd8xJ
+Content-Disposition: form-data; name=&quot;key1&quot;
+value1
+------WebKitFormBoundaryS0JIa4uHF7yHd8xJ—
+</pre>
+                                <p>
+                                    <br />
+                                    方式二：<br />
+                                </p>
+                                <pre>POST /server/api/file HTTP/1.1
+User-Agent: curl/7.12.1 (x86_64-redhat-linux-gnu) libcurl/7.12.1 OpenSSL/0.9.7a zlib/1.2.1.2 libidn/0.5.6
+Pragma: no-cache
+Accept: */*
+Host:www.dayang.com
+Content-Length:123
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryS0JIa4uHF7yHd8xJ
+------WebKitFormBoundaryS0JIa4uHF7yHd8xJ
+Content-Disposition: form-data; name=&quot;key1&quot;
+
+value1
+------WebKitFormBoundaryS0JIa4uHF7yHd8xJ
+Content-Disposition: form-data; name=&quot;key2&quot;
+
+value2
+------WebKitFormBoundaryS0JIa4uHF7yHd8xJ
+Content-Disposition: form-data; name=&quot;key3&quot;
+
+value3
+------WebKitFormBoundaryS0JIa4uHF7yHd8xJ--
+
+</pre>
+                            </div>
+                        </div>
+                        <h3><span id="API.E5.93.8D.E5.BA.94.E6.A0.BC.E5.BC.8F.E8.AF.B4.E6.98.8E">API响应格式说明<br />
+                        </span></h3>
+                        <table class="table table-bordered table-hover">
+
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">正常请求
+                                </th>
+                                <th scope="col">异常请求
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">HTTP状态码
+                                </th>
+                                <td>200 OK
+                                </td>
+                                <td>4**&nbsp;: 用户请求错误。<br />
+                                    5** ：server服务失败。
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">HTTP BODY
+                                </th>
+                                <td>API响应内容
+                                </td>
+                                <td>异常请求的返回值为JSON字符串。<br />
+                                    例如：<br />
+                                    {<br />
+                                    "error_code":110,<br />
+                                    "error_msg":"Access token invalid or no longer valid",<br />
+                                    "request_id":729562373<br />
+                                    }<br />
+                                    说明：<br />
+                                    <dl>
+                                        <dd>- error_code：错误码；<br />
+                                        </dd>
+                                        <dd>- error_msg: 错误描述信息；<br />
+                                        </dd>
+                                        <dd>- request_id: 请求ID。由server生成，用于追查和定位请求日志。<br />
+                                        </dd>
+                                    </dl>
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                        <br />
+                    </section>
+                    <!--API 列表-->
+                     <section id="ApiList">
+                        <div class="page-header">
+                            <h1>API 列表</h1>
+                        </div>
+                        <ol>
+                            <li><a class="nav-link" href="#accessToken">获取accessToken</a></li>
+                            <li><a class="nav-link" href="#verify">验证文件是否存在</a></li>
+                            <li><a class="nav-link" href="#downloadFile">单个文件下载</a></li>
+                            <li><a class="nav-link" href="#uploadFile">单个文件上传</a></li>
+                            <li><a class="nav-link" href="#downLoadManifest">获取指定清单</a></li>
+                            <li><a class="nav-link" href="#uploadManifest">上传清单</a></li>
+                            <li><a class="nav-link" href="#uploadMessage">采集数据上报</a></li>
+                        </ol>
+                        <br />
+
+                        <section id="accessToken">
+                            <h4>1.获取accessToken</h4>
+                            <div>
+                                <div>
+                                    获取accessToken,与服务器建立连接。
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTTP请求方式   <strong class="red">GET</strong></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div>URL</div>
+                                <div>
+                                    <pre>http://server/api/message
+</pre>
+
+                                    <div>
+                                        <div>请求参数</div>
+                                        <div>
+                                            <table class="table table-bordered table-hover">
+
+                                                <tr>
+                                                    <th scope="col">参数名称
+                                                    </th>
+                                                    <th scope="col">类型
+                                                    </th>
+                                                    <th scope="col">是否必需
+                                                    </th>
+                                                    <th scope="col">描述
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>method
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>固定值，accessToken。
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>id
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>用户Id,匿名用户为本机IP
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>pwd
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>密码，匿名用户可以置空
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>返回参数</div>
+                                        <div>
+                                            <p>
+                                                无
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>示例</h5>
+                                        <div>
+                                            请求示例:
+                                            <pre>GET 
+http://server/api/message?method=accessToken&amp;id=127.0.0.1&amp;pwd=000000
+</pre>
+                                            <p>
+                                                响应示例： 
+                                            </p>
+                                            <pre style="font-family: monospace;">d9000194f4b5d2da3fe8b6f850ace082.2592000.1348645419.2233553628-248414</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br />
+                        <section id="verify">
+                            <h4>2.验证文件是否存在</h4>
+                            <div>
+                                <div>
+                                    通过文件的扩展MD5值验证文件是否存在
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTTP请求方式   <strong class="red">GET</strong></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div>URL</div>
+                                <div>
+                                    <pre>http://server/api/file
+</pre>
+
+                                    <div>
+                                        <div>请求参数</div>
+                                        <div>
+                                            <table class="table table-bordered table-hover">
+
+                                                <tr>
+                                                    <th scope="col">参数名称
+                                                    </th>
+                                                    <th scope="col">类型
+                                                    </th>
+                                                    <th scope="col">是否必需
+                                                    </th>
+                                                    <th scope="col">描述
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>method
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>固定值，verify。
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>accessToken
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>填入accessToken
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>md5plus
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>文件的扩展MD5值
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>返回参数</div>
+                                        <div>
+                                            <p>
+                                                200 成功,400 文件已经存在,其他状态码请参阅<a href="#ApiStatusCode">API状态码</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>示例</h5>
+                                        <div>
+                                            请求示例:
+                                            <pre>GET 
+http://server/api/file?method=verify&accessToken=xxxxxx&md5plus=123
+</pre>
+                                            <p>
+                                                响应示例： 
+                                            </p>
+                                            <pre style="font-family: monospace;">200</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                         <br />
+                        <section id="downloadFile">
+                            <h4>3.单个文件下载</h4>
+                            <div>
+                                <div>
+                                    通过传入的文件标识值（MD5Plus）下载单个文件
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTTP请求方式   <strong class="red">GET</strong></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div>URL</div>
+                                <div>
+                                    <pre>http://server/api/file
+</pre>
+
+                                    <div>
+                                        <div>请求参数</div>
+                                        <div>
+                                            <table class="table table-bordered table-hover">
+
+                                                <tr>
+                                                    <th scope="col">参数名称
+                                                    </th>
+                                                    <th scope="col">类型
+                                                    </th>
+                                                    <th scope="col">是否必需
+                                                    </th>
+                                                    <th scope="col">描述
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>method
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>固定值，download。
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>accessToken
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>填入accessToken
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>md5plus
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>文件的扩展MD5值
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>返回参数</div>
+                                        <div>
+                                            <p>
+                                                文件流
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>示例</h5>
+                                        <div>
+                                            请求示例:
+                                            <pre>GET 
+http://server/api/file?method=download&accessToken=xxxxxx&md5plus=123
+</pre>
+                                            <p>
+                                                响应示例： 
+                                            </p>
+                                            <pre style="font-family: monospace;">文件流</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                         <br />
+                        <section id="uploadFile">
+                            <h4>4.单个文件上传</h4>
+                            <div>
+                                <div>
+                                    上传单个文件，返回由服务器端计算的MD5Plus值,暂时不支持大于2G的单个文件
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTTP请求方式   <strong class="red">POST</strong></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div>URL</div>
+                                <div>
+                                    <pre>http://server/api/file
+</pre>
+
+                                    <div>
+                                        <div>请求参数</div>
+                                        <div>
+                                            <table class="table table-bordered table-hover">
+
+                                                <tr>
+                                                    <th scope="col">参数名称
+                                                    </th>
+                                                    <th scope="col">类型
+                                                    </th>
+                                                    <th scope="col">是否必需
+                                                    </th>
+                                                    <th scope="col">描述
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>method
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>固定值，upload。
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>accessToken
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>填入accessToken
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>fileName
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>填写文件名称，包含扩展名
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>file
+                                                    </td>
+                                                    <td>char[]
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>上传文件的内容。
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <strong>注：上述四个参数中file需通过POST表单进行传递，其他参数则需通过query_string进行传递。</strong>
+                                    </div>
+                                    <div>
+                                        <div>返回参数</div>
+                                        <div>
+                                            <p>
+                                                服务端计算的MD5Plus值
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>示例</h5>
+                                        <div>
+                                            请求示例:
+                                            <pre>POST
+http://server/api/file?method=upload&accessToken=xxxxxx&fileName=123.dll
+</pre>
+                                            <p>
+                                                响应示例： 
+                                            </p>
+                                            <pre style="font-family: monospace;">fafsafasfasfafsfafaffaf</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                         <br />
+                        <section id="downLoadManifest">
+                            <h4>5.获取指定清单</h4>
+                            <div>
+                                <div>
+                                    获取指定路由的清单，使用正则表达式匹配清单Title
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTTP请求方式   <strong class="red">GET</strong></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div>URL</div>
+                                <div>
+                                    <pre>http://server/api/manifest
+</pre>
+
+                                    <div>
+                                        <div>请求参数</div>
+                                        <div>
+                                            <table class="table table-bordered table-hover">
+
+                                                <tr>
+                                                    <th scope="col">参数名称
+                                                    </th>
+                                                    <th scope="col">类型
+                                                    </th>
+                                                    <th scope="col">是否必需
+                                                    </th>
+                                                    <th scope="col">描述
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>method
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>固定值，download。
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>accessToken
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>填入accessToken
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>condition
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>要获取的清单标题的正则表达式匹配字符串，注意使用url转码
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>返回参数</div>
+                                        <div>
+                                            <p>
+                                                清单的xml文件
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>示例</h5>
+                                        <div>
+                                            请求示例:
+                                            <pre>GET
+http://server/api/manifest?method=download&accessToken=xxxxxx&condition=com.dayang.proj.edit.0430.btv.20150324
+</pre>
+                                            <p>
+                                                响应示例： 
+                                            </p>
+                                            <pre style="font-family: monospace;">清单文件的XML</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                         <br />
+                        <section id="uploadManifest">
+                            <h4>6.上传清单</h4>
+                            <div>
+                                <div>
+                                    上传指定的清单
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTTP请求方式   <strong class="red">POST</strong></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div>URL</div>
+                                <div>
+                                    <pre>http://server/api/manifest
+</pre>
+
+                                    <div>
+                                        <div>请求参数</div>
+                                        <div>
+                                            <table class="table table-bordered table-hover">
+
+                                                <tr>
+                                                    <th scope="col">参数名称
+                                                    </th>
+                                                    <th scope="col">类型
+                                                    </th>
+                                                    <th scope="col">是否必需
+                                                    </th>
+                                                    <th scope="col">描述
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>method
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>固定值，upload。
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>accessToken
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>填入accessToken
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>title
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>清单的title
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>file
+                                                    </td>
+                                                    <td>char[]
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>清单的xml文件
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <strong>注：上述四个参数中file需通过POST表单进行传递，其他参数则需通过query_string进行传递。</strong>
+                                    </div>
+                                    <div>
+                                        <div>返回参数</div>
+                                        <div>
+                                            <p>
+                                                200 成功,400 清单文件已经存在,其他状态码请参阅<a href="#ApiStatusCode">API状态码</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>示例</h5>
+                                        <div>
+                                            请求示例:
+                                            <pre>GET
+http://server/api/manifest?method=upload&accessToken=xxxxxx&title=com.dayang.proj.edit.0430.btv.20150324
+</pre>
+                                            <p>
+                                                响应示例： 
+                                            </p>
+                                            <pre style="font-family: monospace;">200</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                         <br />
+                         <section id="uploadMessage">
+                            <h4>7.uploadMessage</h4>
+                            <div>
+                                <div>
+                                    采集数据上报
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTTP请求方式   <strong class="red">POST</strong></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div>URL</div>
+                                <div>
+                                    <pre>http://server/api/message
+</pre>
+
+                                    <div>
+                                        <div>请求参数</div>
+                                        <div>
+                                            <table class="table table-bordered table-hover">
+
+                                                <tr>
+                                                    <th scope="col">参数名称
+                                                    </th>
+                                                    <th scope="col">类型
+                                                    </th>
+                                                    <th scope="col">是否必需
+                                                    </th>
+                                                    <th scope="col">描述
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>method
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>固定值，upload。
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>accessToken
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>填入accessToken
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>type
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>上报的数据类型
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>content
+                                                    </td>
+                                                    <td>string
+                                                    </td>
+                                                    <td>是
+                                                    </td>
+                                                    <td>上报的数据内容
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <strong>注：上述四个参数中content需通过POST表单进行传递，其他参数则需通过query_string进行传递。</strong>
+                                    </div>
+                                    <div>
+                                        <div>返回参数</div>
+                                        <div>
+                                            <p>
+                                                200 成功,其他状态码请参阅<a href="#ApiStatusCode">API状态码</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>示例</h5>
+                                        <div>
+                                            请求示例:
+                                            <pre>GET
+http://server/api/message?method=upload&accessToken=xxxxxx&type=1
+</pre>
+                                            <p>
+                                                响应示例： 
+                                            </p>
+                                            <pre style="font-family: monospace;">200</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br />
+                    </section>
+                    <!--API状态码-->
+                    <section id="ApiStatusCode">
+                        <div class="page-header">
+                            <h1>API状态码</h1>
+                        </div>
+                        <p></p>
+                        <div>
+                            <table class="table table-bordered table-hover">
+
+                                <tr>
+                                    <th scope="col">HTTP状态码
+                                    </th>
+                                    <th scope="col">错误码
+                                    </th>
+                                    <th scope="col">错误信息
+                                    </th>
+                                    <th scope="col">备注
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>200
+                                    </td>
+                                    <td>0
+                                    </td>
+                                    <td>no error
+                                    </td>
+                                    <td>没有错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>3
+                                    </td>
+                                    <td>Unsupported open api
+                                    </td>
+                                    <td>不支持此接口
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>4
+                                    </td>
+                                    <td>No permission to do this operation
+                                    </td>
+                                    <td>没有权限执行此操作
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>5
+                                    </td>
+                                    <td>Unauthorized client IP address
+                                    </td>
+                                    <td>IP未授权
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31001
+                                    </td>
+                                    <td>db query error
+                                    </td>
+                                    <td>数据库查询错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31002
+                                    </td>
+                                    <td>db connect error
+                                    </td>
+                                    <td>数据库连接错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31003
+                                    </td>
+                                    <td>db result set is empty
+                                    </td>
+                                    <td>数据库返回空结果
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31021
+                                    </td>
+                                    <td>network error
+                                    </td>
+                                    <td>网络错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31022
+                                    </td>
+                                    <td>can not access server
+                                    </td>
+                                    <td>暂时无法连接服务器
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31023
+                                    </td>
+                                    <td>param error
+                                    </td>
+                                    <td>输入参数错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31024
+                                    </td>
+                                    <td>app id is empty
+                                    </td>
+                                    <td>app id为空
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31025
+                                    </td>
+                                    <td>bcs error
+                                    </td>
+                                    <td>后端存储错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31041
+                                    </td>
+                                    <td>bduss is invalid
+                                    </td>
+                                    <td>用户的cookie不是合法的百度cookie
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31042
+                                    </td>
+                                    <td>user is not login
+                                    </td>
+                                    <td>用户未登陆
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31043
+                                    </td>
+                                    <td>user is not active
+                                    </td>
+                                    <td>用户未激活
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31044
+                                    </td>
+                                    <td>user is not authorized
+                                    </td>
+                                    <td>用户未授权
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31045
+                                    </td>
+                                    <td>user not exists
+                                    </td>
+                                    <td>用户不存在
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31046
+                                    </td>
+                                    <td>user already exists
+                                    </td>
+                                    <td>用户已经存在
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31061
+                                    </td>
+                                    <td>file already exists
+                                    </td>
+                                    <td>文件已经存在
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31062
+                                    </td>
+                                    <td>file name is invalid
+                                    </td>
+                                    <td>文件名非法
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31063
+                                    </td>
+                                    <td>file parent path does not exist
+                                    </td>
+                                    <td>文件父目录不存在
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31064
+                                    </td>
+                                    <td>file is not authorized
+                                    </td>
+                                    <td>无权访问此文件
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31065
+                                    </td>
+                                    <td>directory is full
+                                    </td>
+                                    <td>目录已满
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31066
+                                    </td>
+                                    <td>file does not exist
+                                    </td>
+                                    <td>文件不存在
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31067
+                                    </td>
+                                    <td>file deal failed
+                                    </td>
+                                    <td>文件处理出错
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31068
+                                    </td>
+                                    <td>file create failed
+                                    </td>
+                                    <td>文件创建失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31069
+                                    </td>
+                                    <td>file copy failed
+                                    </td>
+                                    <td>文件拷贝失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31070
+                                    </td>
+                                    <td>file delete failed
+                                    </td>
+                                    <td>文件删除失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31071
+                                    </td>
+                                    <td>get file meta failed
+                                    </td>
+                                    <td>不能读取文件元信息
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31072
+                                    </td>
+                                    <td>file move failed
+                                    </td>
+                                    <td>文件移动失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31073
+                                    </td>
+                                    <td>file rename failed
+                                    </td>
+                                    <td>文件重命名失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31081
+                                    </td>
+                                    <td>superfile create failed
+                                    </td>
+                                    <td>superfile创建失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31082
+                                    </td>
+                                    <td>superfile block list is empty
+                                    </td>
+                                    <td>superfile 块列表为空
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31083
+                                    </td>
+                                    <td>superfile update failed
+                                    </td>
+                                    <td>superfile 更新失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31101
+                                    </td>
+                                    <td>tag internal error
+                                    </td>
+                                    <td>tag系统内部错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31102
+                                    </td>
+                                    <td>tag param error
+                                    </td>
+                                    <td>tag参数错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31103
+                                    </td>
+                                    <td>tag database error
+                                    </td>
+                                    <td>tag系统错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31110
+                                    </td>
+                                    <td>access denied to set quota
+                                    </td>
+                                    <td>未授权设置此目录配额
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31111
+                                    </td>
+                                    <td>quota only sopport 2 level directories
+                                    </td>
+                                    <td>配额管理只支持两级目录
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31112
+                                    </td>
+                                    <td>exceed quota
+                                    </td>
+                                    <td>超出配额
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31113
+                                    </td>
+                                    <td>the quota is bigger than one of its parent directorys
+                                    </td>
+                                    <td>配额不能超出目录祖先的配额
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31114
+                                    </td>
+                                    <td>the quota is smaller than one of its sub directorys
+                                    </td>
+                                    <td>配额不能比子目录配额小
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31141
+                                    </td>
+                                    <td>thumbnail failed, internal error
+                                    </td>
+                                    <td>请求缩略图服务失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>401
+                                    </td>
+                                    <td>110
+                                    </td>
+                                    <td>Access token invalid or no longer valid
+                                    </td>
+                                    <td>Access Token不正确或者已经过期
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31201
+                                    </td>
+                                    <td>signature error
+                                    </td>
+                                    <td>签名错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31203
+                                    </td>
+                                    <td>acl put error
+                                    </td>
+                                    <td>设置acl失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31204
+                                    </td>
+                                    <td>acl query error
+                                    </td>
+                                    <td>请求acl验证失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31205
+                                    </td>
+                                    <td>acl get error
+                                    </td>
+                                    <td>获取acl失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>404
+                                    </td>
+                                    <td>31079
+                                    </td>
+                                    <td>File md5 not found, you should use upload API to upload the whole file.
+                                    </td>
+                                    <td>未找到文件MD5，请使用上传API上传整个文件。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>404
+                                    </td>
+                                    <td>31202
+                                    </td>
+                                    <td>object not exists
+                                    </td>
+                                    <td>文件不存在
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>404
+                                    </td>
+                                    <td>31206
+                                    </td>
+                                    <td>acl get error
+                                    </td>
+                                    <td>acl不存在
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31207
+                                    </td>
+                                    <td>bucket already exists
+                                    </td>
+                                    <td>bucket已存在
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>400
+                                    </td>
+                                    <td>31208
+                                    </td>
+                                    <td>bad request
+                                    </td>
+                                    <td>用户请求错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>500
+                                    </td>
+                                    <td>31209
+                                    </td>
+                                    <td>baidubs internal error
+                                    </td>
+                                    <td>服务器错误
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>501
+                                    </td>
+                                    <td>31210
+                                    </td>
+                                    <td>not implement
+                                    </td>
+                                    <td>服务器不支持
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31211
+                                    </td>
+                                    <td>access denied
+                                    </td>
+                                    <td>禁止访问
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31212
+                                    </td>
+                                    <td>service unavailable
+                                    </td>
+                                    <td>服务不可用
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31213
+                                    </td>
+                                    <td>service unavailable
+                                    </td>
+                                    <td>重试出错
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31214
+                                    </td>
+                                    <td>put object data error
+                                    </td>
+                                    <td>上传文件data失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31215
+                                    </td>
+                                    <td>put object meta error
+                                    </td>
+                                    <td>上传文件meta失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31216
+                                    </td>
+                                    <td>get object data error
+                                    </td>
+                                    <td>下载文件data失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>503
+                                    </td>
+                                    <td>31217
+                                    </td>
+                                    <td>get object meta error
+                                    </td>
+                                    <td>下载文件meta失败
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31218
+                                    </td>
+                                    <td>storage exceed limit
+                                    </td>
+                                    <td>容量超出限额
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31219
+                                    </td>
+                                    <td>request exceed limit
+                                    </td>
+                                    <td>请求数超出限额
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>403
+                                    </td>
+                                    <td>31220
+                                    </td>
+                                    <td>transfer exceed limit
+                                    </td>
+                                    <td>流量超出限额
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>500
+                                    </td>
+                                    <td>31298
+                                    </td>
+                                    <td>the value of KEY[VALUE] in server response headers is invalid
+                                    </td>
+                                    <td>服务器返回值KEY非法
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>500
+                                    </td>
+                                    <td>31299
+                                    </td>
+                                    <td>no KEY in server response headers
+                                    </td>
+                                    <td>服务器返回值KEY不存在
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+
+            <!-- END PAGE CONTAINER-->
+
+        </div>
+
+        <!-- END PAGE -->
+
+    </div>
+
+    <!-- END CONTAINER -->
+
+    <!-- BEGIN FOOTER -->
+
+    <div class="footer">
+
+        <div class="footer-inner">
+            2013 &copy; Metronic by keenthemes.
+
+        </div>
+
+        <div class="footer-tools">
+
+            <span class="go-top">
+
+                <i class="icon-angle-up"></i>
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- END FOOTER -->
+
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+    <!-- BEGIN CORE PLUGINS -->
+
+    <script src="media/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+    <script src="media/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+    <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+    <script src="media/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+
+    <script src="media/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+
+	<script src="media/js/excanvas.min.js"></script>
+
+	<script src="media/js/respond.min.js"></script>  
+
+	<![endif]-->
+
+    <script src="media/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+    <script src="media/js/jquery.blockui.min.js" type="text/javascript"></script>
+
+    <script src="media/js/jquery.cookie.min.js" type="text/javascript"></script>
+
+    <script src="media/js/jquery.uniform.min.js" type="text/javascript"></script>
+
+    <!-- END CORE PLUGINS -->
+
+    <script src="media/js/app.js"></script>
+
+    <script>
+
+        jQuery(document).ready(function () {
+
+            App.init();
+
+        });
+
+    </script>
+
+    <!-- END JAVASCRIPTS -->
+
+    <script type="text/javascript">  var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-37564768-1']); _gaq.push(['_setDomainName', 'keenthemes.com']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+</body>
+
+<!-- END BODY -->
+
+</html>
